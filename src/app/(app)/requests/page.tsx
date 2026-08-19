@@ -1,0 +1,1 @@
+export default function Page(){return <><h1>Requests</h1><div className="card"><p className="muted">Incoming service requests will appear here.</p></div></>}

@@ -1,0 +1,3 @@
+import Link from 'next/link';
+const links=[['Dashboard','/dashboard'],['Customers','/customers'],['Requests','/requests'],['Quotes','/quotes'],['Jobs','/jobs'],['Schedule','/schedule'],['Invoices','/invoices'],['Team','/team'],['Settings','/settings']];
+export function AppShell({children}:{children:React.ReactNode}){return <div className="shell"><aside className="sidebar"><div className="brand">Jobox</div><nav className="nav">{links.map(([n,h])=><Link key={h} href={h}>{n}</Link>)}</nav></aside><main className="main"><header className="topbar"><input className="search" placeholder="Search customers, jobs, invoices..."/><div><b>Jobox</b></div></header><div className="content">{children}</div></main></div>}

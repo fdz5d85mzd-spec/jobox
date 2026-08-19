@@ -1,0 +1,1 @@
+export default function Page(){return <><h1>Team</h1><div className="card"><p className="muted">Manage owners, admins, dispatchers, office staff and technicians.</p></div></>}

@@ -1,0 +1,1 @@
+export default function Page(){return <><h1>Settings</h1><div className="detailgrid">{['Company profile','Team & permissions','Payments','Taxes & currency','Notifications','Security'].map(x=><div className="card" key={x}><b>{x}</b></div>)}</div></>}
